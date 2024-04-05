@@ -288,6 +288,116 @@
 				)
 			)
 		)
+		(symbol "Connector_Generic:Conn_01x01"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x01_1_1"
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
 				(offset 1.016) hide)
@@ -1470,6 +1580,17 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 124.46) (xy 85.09 124.46)
+		)
+		(stroke
+			(width 0.25)
+			(type default)
+			(color 255 153 0 1)
+		)
+		(uuid "1caea07d-7b87-4873-b3ae-f1baa4aba88c")
+	)
+	(wire
+		(pts
 			(xy 124.46 48.26) (xy 147.32 48.26)
 		)
 		(stroke
@@ -1611,6 +1732,17 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 121.92) (xy 92.71 124.46)
+		)
+		(stroke
+			(width 0.25)
+			(type default)
+			(color 255 153 0 1)
+		)
+		(uuid "536deb22-bfc8-434d-93cf-9fe0568ad749")
+	)
+	(wire
+		(pts
 			(xy 129.54 53.34) (xy 147.32 53.34)
 		)
 		(stroke
@@ -1712,6 +1844,17 @@
 			(type default)
 		)
 		(uuid "972c6aaf-0c60-483b-831c-e8edf500a450")
+	)
+	(wire
+		(pts
+			(xy 92.71 130.81) (xy 92.71 134.62)
+		)
+		(stroke
+			(width 0.25)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "9cff2469-f3cc-481d-ae8f-d4b45a399a8c")
 	)
 	(wire
 		(pts
@@ -1850,6 +1993,17 @@
 			(type default)
 		)
 		(uuid "e022bb84-e36a-448e-b335-088cb7db25c9")
+	)
+	(wire
+		(pts
+			(xy 85.09 130.81) (xy 92.71 130.81)
+		)
+		(stroke
+			(width 0.25)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "e2c7126f-b170-409c-954a-c46eb894e81d")
 	)
 	(wire
 		(pts
@@ -2374,16 +2528,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 114.3 111.76 0)
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 80.01 130.81 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "cbab80f6-ed34-4bce-9801-480e47d8d533")
-		(property "Reference" "H1"
-			(at 113.03 108.585 0)
+		(uuid "c79ccdd6-ccf1-4ee3-92ce-b4d09f20de42")
+		(property "Reference" "J13"
+			(at 81.788 128.016 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2391,18 +2545,17 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 116.84 112.9721 0)
+		(property "Value" "GND"
+			(at 77.47 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 114.3 111.76 0)
+		(property "Footprint" "Wago:Pad_7.5x2.2mm"
+			(at 80.01 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2411,7 +2564,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 114.3 111.76 0)
+			(at 80.01 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2420,7 +2573,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 114.3 111.76 0)
+			(at 80.01 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2428,10 +2581,79 @@
 				(hide yes)
 			)
 		)
+		(pin "1"
+			(uuid "fde8e8aa-6822-4f4a-bcc6-2010d7ebf880")
+		)
 		(instances
 			(project "RJ12-I2C-12V-Adapter"
 				(path "/43eae256-346c-4f64-a789-61d2e1496dbb"
-					(reference "H1")
+					(reference "J13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 92.71 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c7b2dbdf-88a4-41ab-bcf1-daa536f9adb2")
+		(property "Reference" "#PWR01006"
+			(at 92.71 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 92.71 117.7869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 92.71 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1b6615b2-153a-4a8a-9cb4-e42377393be7")
+		)
+		(instances
+			(project "RJ12-I2C-12V-Adapter"
+				(path "/43eae256-346c-4f64-a789-61d2e1496dbb"
+					(reference "#PWR01006")
 					(unit 1)
 				)
 			)
@@ -2496,6 +2718,72 @@
 			(project "RJ12-I2C-12V-Adapter"
 				(path "/43eae256-346c-4f64-a789-61d2e1496dbb"
 					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 80.01 124.46 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "da372883-94f1-46f7-a0e9-dccdc479c53f")
+		(property "Reference" "J12"
+			(at 81.788 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+12V"
+			(at 77.47 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Wago:Pad_7.5x2.2mm"
+			(at 80.01 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 80.01 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "95003f38-e5d4-4c4c-a34a-87b0f63ea0e0")
+		)
+		(instances
+			(project "RJ12-I2C-12V-Adapter"
+				(path "/43eae256-346c-4f64-a789-61d2e1496dbb"
+					(reference "J12")
 					(unit 1)
 				)
 			)
@@ -2576,6 +2864,72 @@
 			(project "RJ12-I2C-12V-Adapter"
 				(path "/43eae256-346c-4f64-a789-61d2e1496dbb"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 92.71 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e8ac22f9-f305-4eef-91b4-154be97f3055")
+		(property "Reference" "#PWR01005"
+			(at 92.71 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 92.71 138.7531 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 92.71 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "89b0db9c-8823-47fd-bbfe-77544f98fd03")
+		)
+		(instances
+			(project "RJ12-I2C-12V-Adapter"
+				(path "/43eae256-346c-4f64-a789-61d2e1496dbb"
+					(reference "#PWR01005")
 					(unit 1)
 				)
 			)
