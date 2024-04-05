@@ -606,7 +606,7 @@
 		(descr "SMD rectangular pad as test Point, square 2.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "J12"
-			(at 0 -1.998 270)
+			(at 0 -1.998 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "827e4f64-7cc1-48cb-86e5-a2ba66edcfe3")
@@ -618,7 +618,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at -4.445 0 270)
+			(at -4.445 0 -90)
 			(layer "F.SilkS")
 			(uuid "0735135d-9d81-415d-add3-2c3b2141b014")
 			(effects
@@ -751,7 +751,7 @@
 			(uuid "c943de43-ccdf-4d73-bebc-2b68bf0958b4")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 270)
+			(at 0 -2.286 -90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "30247c99-7341-469f-b2ec-b25afcc27ad4")
@@ -1418,7 +1418,7 @@
 		(descr "SMD rectangular pad as test Point, square 2.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "J13"
-			(at 0 -1.998 270)
+			(at 0 -1.998 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "5ed6e8d8-fab2-455a-a56c-0d3dd6c68a2b")
@@ -1430,7 +1430,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at -4.445 -0.127 270)
+			(at -4.445 -0.127 -90)
 			(layer "F.SilkS")
 			(uuid "3c32cfe5-c40b-47a5-a3fc-952acd8783dd")
 			(effects
@@ -1563,7 +1563,7 @@
 			(uuid "f1059f23-917f-40b0-b55d-ae195704dd8e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 270)
+			(at 0 -2.286 -90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "86475e68-a44a-4a1e-92f2-44b84eec56b9")
@@ -1593,6 +1593,7 @@
 		(property "Reference" "J11"
 			(at -1.27 2.77 0)
 			(layer "B.SilkS")
+			(hide yes)
 			(uuid "a8519806-f45f-44a6-9021-1e0a4e6c31de")
 			(effects
 				(font
@@ -1602,10 +1603,9 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "Relais-Power"
-			(at -1.27 -5.31 0)
-			(layer "B.Fab")
-			(hide yes)
+		(property "Value" "Relais"
+			(at -1.27 2.54 0)
+			(layer "B.SilkS")
 			(uuid "43bd2697-610b-4f8d-a38b-957c17306701")
 			(effects
 				(font
@@ -1907,6 +1907,7 @@
 		(property "Reference" "J10"
 			(at -1.27 2.77 0)
 			(layer "B.SilkS")
+			(hide yes)
 			(uuid "aca8471f-53db-4bbc-bf08-2202d9fed53c")
 			(effects
 				(font
@@ -2343,6 +2344,18 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "f29cd496-4cb9-4644-85e8-3c68d958da4d")
+	)
+	(gr_text "I²C"
+		(at 95.885 83.185 0)
+		(layer "B.SilkS")
+		(uuid "85014304-be4c-46b9-8958-74dd970772d6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
 	)
 	(gr_text "GND"
 		(locked yes)
